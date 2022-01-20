@@ -32,22 +32,22 @@ Because I was able to rate my dataset based on my top artists from Spotify, I us
 
 [Modeling & Results](https://github.com/Ranealdinho/Springboard/blob/main/Spotify/Spotify_Recommendation_Modeling.ipynb)
 
-- First thing I did to my train/test dataset was I used my "Top Artist" Spotify data to rate my dataset. If a song in the playlist was by one of my 60 "top artists" I gave the song a rating of "1", if the song was not by one of my favorite artists, I gave the song a rating of "0"
+First thing I did to my train/test dataset was I used my "Top Artist" Spotify data to rate my dataset. If a song in the playlist was by one of my 60 "top artists" I gave the song a rating of "1", if the song was not by one of my favorite artists, I gave the song a rating of "0"
 
-- Variables that I used to train the data:
+Variables that I used to train the data:
 
  * 'danceability', 'energy', 'key', 'loudness', 'mode', 'speechiness', 'acousticness', 'instrumentalness', 'liveness', 'valence', 'tempo', 'time_signature', and 'genres'
  
- - Variables that I did not want to use to train data:
+ Variables that I did not want to use to train data:
  
  * 'popularity', 'explicit'
  
- - Variable I was trying to predict:
+ Variable I was trying to predict:
  
  * 'rating'
 
 
-- I then fit 3 seperate Classification Models with my trained data, and compared the classification reports and accuracy scores of all 3 to determine which model would be the best.
+I then fit 3 seperate Classification Models with my trained data, and compared the classification reports and accuracy scores of all 3 to determine which model would be the best.
 
 * 1) Logistic regression (after scaling data): Accuracy score of 0.6651982378854625 
 
@@ -55,7 +55,7 @@ Because I was able to rate my dataset based on my top artists from Spotify, I us
 
 * 3) Random Forest Classifier (after determining optimal max_depth = 20, and min_leaf_samples = 1): *Accuracy score of 0.947136563876652*
 
--The Random Forest classifier easily outperformed the other models, and would be the model I used to predict.
+The Random Forest classifier easily outperformed the other models, and would be the model I used to predict.
 
 
 ## 5. Outcomes
